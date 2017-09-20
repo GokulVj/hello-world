@@ -62,7 +62,7 @@ body{
     width: 100%;
     position: absolute;
     margin-top: 0px;
-    padding-left: 10px;
+    padding-left: 0px;
     transition: padding-left ease-in-out 0.5s;
 
 }
@@ -73,7 +73,7 @@ body{
 }
 
 #wrapper.menuDisplayed #page-content-wrapper {
-    padding-left: 10px;
+    padding-left: 0px;
     transition: padding-left ease-in-out 0.5s;
 }
 
@@ -164,7 +164,7 @@ body{
 }
 
 .graph-temp-rh-alerts{
-    padding: 0px 10px 0px 30px!important;
+    padding: 0px!important;
 }
 
 .top_tiles{
@@ -606,6 +606,7 @@ form button{
 
 .navbar-default .navbar-nav>li>a {
     color: #777;
+    font-size: 16px;
 }
 
 .searchtext.activenow{
@@ -1029,8 +1030,9 @@ form button{
 }
 
 .company-name{
-    font-family: 'Courgette', cursive;
-    font-size:20px;
+    font-family: 'Arimo', sans-serif;
+    font-style: italic;
+    font-size: 22px!important;
 }
 
 .loc-image{
@@ -1089,3 +1091,285 @@ form button{
 .weather-temp{
     font-size:70px;
 }
+.config-drop{
+	color: black;
+	background: #ededed;
+	height:60px;
+	position: relative;
+
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+.config-jumbo-text ,.config-jumbo-arrow{
+	position: absolute;
+	top: 30%;
+	font-size: 20px;
+	color: #4f4f4f;
+}
+.config-jumbo-text{
+	left: 10%;
+}
+.config-jumbo-arrow{
+	left: 90%;
+}
+
+
+/*updated 15-09-17*/
+    #temp-drop,#rhdrop{
+        padding: 10px;
+    }
+    .config-input{
+        padding:10px;
+    }
+    .image-sidebar{
+
+    }
+    .sidebar-user{
+        background-image: url('../images/user-bg.jpg');
+        background-size: 100% 100%;
+        height: 100px;
+        position: relative;
+    }
+    .image-sidebar{
+        width: 25%;
+        height: 60%;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    .username-sidebar{
+        color: white;
+        font-size: 16px;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        font-weight: bold;
+    }
+    .username-sidebar i{
+        margin-left:10px;
+    }
+    .previlage-sidebar{
+        color: white;
+        font-size: 14px;
+        position: absolute;
+        top: 55%;
+        left: 40%;
+    }
+
+    .gauge-new {
+        display: block;
+        float: left;
+        box-sizing: border-box;
+        margin: 0 0 0 0;
+        height: 200px;
+    }
+    .navbar-nav>li>a:hover{
+        color: #8BC540 !important;
+    }
+
+
+    .header {
+      background-color: #327a81;
+      color: white;
+      font-size: 1.5em;
+      padding: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .img-temptable {
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+    }
+
+    .table-temp {
+      border: 1px solid #327a81;
+
+      box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+      max-width: 100%;
+
+      overflow: hidden;
+      width: 800px;
+    }
+
+    .temperature-table {
+      width: 100%;
+    }
+    .temperature-table td,.temperature-table th {
+      color: #2b686e;
+      padding: 10px;
+    }
+    .temperature-table td {
+      text-align: center;
+      vertical-align: middle;
+    }
+    .temperature-table td:last-child {
+      font-size: 0.95em;
+      line-height: 1.4;
+      text-align: left;
+    }
+    .temperature-table th {
+      background-color: #daeff1;
+      font-weight: 300;
+    }
+    .temperature-table tr:nth-child(2n) {
+      background-color: white;
+    }
+    .temperature-table tr:nth-child(2n+1) {
+      background-color: #edf7f8;
+    }
+
+    @media screen and (max-width: 700px) {
+      .temperature-table, tr, td {
+        display: block;
+      }
+
+      .temperature-table tr td:first-child {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 70px;
+      }
+      .temperature-table tr td:not(:first-child) {
+        clear: both;
+        margin-left: 100px;
+        padding: 4px 20px 4px 90px;
+        position: relative;
+        text-align: left;
+      }
+      .temperature-table tr td:not(:first-child):before {
+        color: #91ced4;
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+      }
+      .temperature-table tr td:nth-child(2):before {
+        content: 'Name:';
+      }
+      .temperature-table tr td:nth-child(3):before {
+        content: 'Email:';
+      }
+      .temperature-table tr td:nth-child(4):before {
+        content: 'Phone:';
+      }
+      .temperature-table tr td:nth-child(5):before {
+        content: 'Comments:';
+      }
+
+      .temperature-table tr {
+        padding: 10px 0;
+        position: relative;
+      }
+      .temperature-tabletr:first-child {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .header {
+        background-color: transparent;
+        color: white;
+        font-size: 2em;
+        font-weight: 700;
+        padding: 0;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      .img-temptable {
+        border: 3px solid;
+        border-color: #daeff1;
+        height: 100px;
+        margin: 0.5rem 0;
+        width: 100px;
+      }
+
+      td:first-child {
+        background-color: #c8e7ea;
+        border-bottom: 1px solid #91ced4;
+        border-radius: 10px 10px 0 0;
+        position: relative;
+        top: 0;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        width: 100%;
+      }
+      td:not(:first-child) {
+        margin: 0;
+        padding: 5px 1em;
+        width: 100%;
+      }
+      td:not(:first-child):before {
+        font-size: .8em;
+        padding-top: 0.3em;
+        position: relative;
+      }
+      td:last-child {
+        padding-bottom: 1rem !important;
+      }
+
+      tr {
+        background-color: white !important;
+        border: 1px solid #6cbec6;
+        border-radius: 10px;
+        box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+        margin: 0.5rem 0;
+        padding: 0;
+      }
+
+      .table-users {
+        border: none;
+        box-shadow: none;
+        overflow: visible;
+      }
+    }
+
+
+	#footer {
+		padding: 4rem 0 2rem 0 ;
+		background: #1b2732;
+		text-align: center;
+	}
+
+    #footer a,#footer .footer-logo {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    #footer a:hover {
+        color: #FFF;
+    }
+
+    #footer .copyright {
+        color: #bbb;
+        font-size: 1.2rem;
+        margin: 0 0 2rem 0;
+        padding: 0;
+        text-align: center;
+        padding-top:0.5rem;
+    }
+    #footer .social-links{
+
+        float: right;
+        padding-right: 20px;
+    }
+    #footer .social-links i{
+        font-size: 25px;
+        color: white;
+        padding: 0px 10px;
+    }
+
+
+    .footer-logo{
+        color: white;
+        font-size: 20px;
+        float:left;
+        padding-left: 20px;
+        font-family: 'Arimo', sans-serif;
+        font-style: italic;
+    }
+    .notification-message b{
+        font-size: 15px;
+    }
+/*close 15-09-17*/
